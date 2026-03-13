@@ -13,6 +13,6 @@ First, install **Node.js** from the official website:
 Node.js automatically installs **npm (Node Package Manager)** which is used to install project dependencies.
 
 Second , install **JSON Server**
-npm install -g json-server
+bash--npm install -g json-server
 
 Third, Create a json file as data. I created dataset named student.json
