@@ -1,0 +1,46 @@
+{
+	"students":[
+	{
+	   "id":1,
+	   "name":"john",
+	   "location":"bangladesh",
+	   "phone":"01773773737",
+	   "courses":[
+		"java",
+		"python"
+	   ]
+
+	},
+
+	{
+	   
+	   "id":2,
+	   "name":"kim",
+	   "location":"South africa",
+	   "phone":"01773773700",
+	   "courses":[
+		"java",
+		"python",
+		"C++"
+	   ]
+          },
+   
+	  {
+            
+            
+	   "id":3,
+	   "name":"Era",
+	   "location":"bangladesh",
+	   "phone":"01773773737",
+	   "courses":[
+		"java",
+		"python",
+		"Seenium"
+	   ]
+
+	 } 
+
+
+
+	]
+}
