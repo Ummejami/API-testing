@@ -16,3 +16,4 @@ Second , install **JSON Server**
 bash--npm install -g json-server
 
 Third, Create a json file as data. I created dataset named student.json
+Creat a dummy server like  by applying json-server student.json which will Give endpoint like http://localhost:3000/students
