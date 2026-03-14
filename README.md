@@ -1,19 +1,32 @@
 # Dummy Student API (JSON Server)
 
-This project demonstrates how to create a simple dummy REST API using **Node.js** and **JSON Server**. It can be used for API testing, frontend development, or learning REST API concepts.
+This project demonstrates how to create a simple dummy REST API using **Node.js** and **JSON Server**. It can be used for API testing, frontend development, and learning REST API concepts.
+
+---
+
+## Project Overview
+
+A local dummy API was created using **JSON Server** and a `student.json` file. The API was tested in **Postman** by performing CRUD operations and validating the response status codes.
 
 ---
 
 ## Environment Setup
 
-First, install **Node.js** from the official website:
+### 1. Install Node.js
 
-🔗 https://nodejs.org/
+Install **Node.js** from the official website:
 
-Node.js automatically installs **npm (Node Package Manager)** which is used to install project dependencies.
+[https://nodejs.org/](https://nodejs.org/)
 
-Second , install **JSON Server**
-bash--npm install -g json-server
+Node.js automatically installs **npm (Node Package Manager)**, which is used to install project dependencies.
 
-Third, Create a json file as data. I created dataset named student.json
-Creat a dummy server like  by applying json-server student.json which will Give endpoint like http://localhost:3000/students
+### 2. Install JSON Server
+
+Run the following command in the terminal:
+
+```bash
+npm install -g json-server
+
+
+---
+who
