@@ -55,6 +55,8 @@ The API responses were validated in Postman using test scripts to verify that th
 - Response time
 - Response body
 
+  Script is provided through 'API-testing/Dummy API.postman_collection.json'
+
 ## Tools Used
 - Node.js
 - Postman
