@@ -1,0 +1,69 @@
+
+var jsonData = pm.response.json();
+// Old version for validating schema 
+
+
+var schema = {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "courses": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "location",
+    "phone",
+    "courses"
+  ]
+}
+
+pm.test("Test schema validation",()=>{
+    pm.expect(tv4.validate(jsonData,schema)).to.be.true;
+});
+
+// New version for validation schema
+
+const schema1 = {
+    type: "object",
+    properties: {
+        id: { type: "string" },
+        name: { type: "string" },
+        location: { type: "string" },
+        phone: { type: "string" },
+        courses: {
+            type: "array",
+            items: {
+                type: "string"
+            }
+        }
+    },
+    required: ["id", "name", "location", "phone", "courses"]
+};
+
+pm.test("Test schema validation", () => {
+    pm.response.to.have.jsonSchema(schema1);
+});
+

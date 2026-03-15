@@ -1,0 +1,57 @@
+const jsonData = pm.response.json();
+
+// status code validation
+
+pm.test("Status Code is 200",()=>{
+    pm.response.to.have.status(200);
+});
+
+pm.test("Status Code is 200",()=>{
+    pm.response.to.have.status("Ok");
+});
+
+
+// multiple status validation
+pm.test("Status code is 200 or 204", () => {
+    pm.expect(pm.response.code).to.be.oneOf([200, 204]);
+});
+
+// Check data type
+pm.test("Response is an object", () => {
+    pm.expect(jsonData).to.be.an("object");
+});
+
+pm.test("Student id is present", () => {
+    pm.expect(jsonData.id).to.exist;
+});
+
+pm.test("Student name is a string", () => {
+    pm.expect(jsonData.name).to.be.a("string");
+});
+
+pm.test("Courses is an array", () => {
+    pm.expect(jsonData.courses).to.be.an("array");
+});
+
+// Check field value
+
+var jsonData = pm.response.json();
+
+pm.test("Response is an object", () => {
+    pm.expect(jsonData).to.eql("students");
+});
+
+pm.test("students is an array", () => {
+    pm.expect(jsonData.courses).to.eql(["java","python"]);
+});
+
+pm.test("students is an id", () => {
+    pm.expect(jsonData.id).to.eql("1");
+});
+
+pm.test("students is an array", () => {
+    pm.expect(jsonData.phone).to.eql("01773740459");
+});
+
+
+
