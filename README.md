@@ -54,8 +54,11 @@ The API responses were validated in Postman using test scripts to verify that th
 - Cookies
 - Response time
 - Response body
+  Response Body validation required two type schema conversion . One for old version which used keyword **tv4** and one for new version which required **jsonschema**. Json to schema conversion site
+  ```bash
+  https://www.liquid-technologies.com/online-json-to-schema-converter
+  ```
 
-  Script is provided through 'API-testing/Dummy API.postman_collection.json'
 
 ## Tools Used
 - Node.js
