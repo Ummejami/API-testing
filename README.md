@@ -59,7 +59,18 @@ The API responses were validated in Postman using test scripts to verify that th
   ```bash
   https://www.liquid-technologies.com/online-json-to-schema-converter
   ```
-
+## Summary
+What I have done here?
+- Dummy API creation
+- Performed HTTP requests
+- Validated the responses:
+  - Checked status codes for different HTTP methods
+  - Verified response data types such as object, array, string, and number
+  - Validated specific response fields like `id`, `name`, `location`, `phone`, and `courses`
+  - Confirmed required properties exist in the response body
+  - Performed JSON schema validation
+  - Checked response time
+  - Verified header,cookies
 
 ## Tools Used
 - Node.js
