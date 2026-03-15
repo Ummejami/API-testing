@@ -1,0 +1,11 @@
+pm.test("Content Type header is present",()=>{
+    pm.response.to.have.header("Content-Type");
+});
+
+pm.test("Response sets a cookie", function () {
+  pm.expect(pm.response.headers.has("Set-Cookie")).to.be.true;
+});
+
+pm.test("Content type header is application/json",()=>{
+    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');
+});
