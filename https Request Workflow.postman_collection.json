@@ -1,0 +1,117 @@
+{
+  "info": {
+    "_postman_id": "387fb54d-5af8-4923-979a-466dd9b704bd",
+    "name": "https Request Workflow",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52925547",
+    "_collection_link": "https://go.postman.co/collection/52925547-387fb54d-5af8-4923-979a-466dd9b704bd?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Myfolder",
+      "item": [
+        {
+          "name": "Get Request",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "console.log(\"This is pre_request in request\");"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "console.log(\"This is post_request in request\");"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": \"5\",\r\n    \"name\": \"john doe mia\",\r\n    \"location\": \"bangladesh\",\r\n    \"phone\": \"01773773737\",\r\n    \"courses\": [\r\n        \"java\",\r\n        \"python\"\r\n    ]\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/students",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "students"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {},
+            "exec": [
+              "console.log(\"This is a pre_request in folder\");"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {},
+            "exec": [
+              "console.log(\"This is a post_request in folder\");"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          "console.log(\"This is a pre_request in collection\");"
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          "console.log(\"This is a post_request in collection\");"
+        ]
+      }
+    }
+  ]
+}
