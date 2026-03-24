@@ -1,5 +1,9 @@
 # API testing with Public API, Authinticated API and Local API 
-This project demonstarte how  API testing perform through various domain and fields.
+---
+Here's i worked with API testing request,response validation,environment set up,api chaining methodology,assertion,field validation,file upload with three type of API 
+- Local API (Dummy Students API)
+- Public API (Simple Book Store)
+- Authenticated API (Go_rest API)
 ---
 ## 1. Dummy Student API (JSON Server)
 
