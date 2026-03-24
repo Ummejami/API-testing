@@ -2,8 +2,8 @@
 ---
 Here's i worked with API testing request,response validation,environment set up,api chaining methodology,assertion,field validation,file upload with three type of API 
 - Local API (Dummy Students API)
-- Public API (Simple Book Store)
-- Authenticated API (Go_rest API)
+- Authenticated API (Simple Book Store)
+- Public API (Go_rest API)
 ---
 ## 1. Dummy Student API (JSON Server)
 
@@ -69,13 +69,50 @@ The API responses were validated in Postman using test scripts to verify that th
 
  ---
 
-## 2. Simple Books API 
-This project demonstrates end-to-end API testing of a Book Store system including authentication, book retrieval, order creation, and order management ,api chaining using postman. This is a documented API. The documentation like express the workflow of this entire system . 
+
+
+# 2. 📚 Book Store API Testing (Simple Book Store API)
+
+## 📌 Project Overview
+This project demonstrates end-to-end API testing of a Book Store system using the Simple Books API. It covers authentication, book retrieval, order management, API chaining, and automation using Postman.
 Documentation is available here.
 ``` bash
 https://share.google/clnJvpt786PwDN5Os
 ```
+---
 
+## 🌐 API Used
+- https://simple-books-api.glitch.me/
+
+---
+
+## 🎯 Objectives
+- Perform API testing on a book ordering system  
+- Validate request and response data  
+- Implement API chaining using environment variables  
+- Automate API execution using Newman  
+- Integrate API tests with Jenkins  
+
+---
+
+## 🔐 Authentication
+The API requires authentication for order-related endpoints.
+
+### Generate Token:
+- Send POST request to `/api-clients/`
+- Store token in environment variable  
+
+## 3. Go_rest API
+This project demonstrates end-to-end API testing of a User Management system using the GoRest public API. It covers authentication, CRUD operations, API chaining, validation, and automation.
+##  🌐 API Used
+```bash
+https://gorest.co.in/
+```
+## Objectives
+-Perform CRUD operations on user resources
+-Implement Bearer Token authentication
+-Validate API responses (status codes, body, schema)
+-Perform API chaining using environment variables
 ## Tools Used
 - Node.js
 - Postman
@@ -93,3 +130,4 @@ What I have done here?
   - Performed JSON schema validation
   - Checked response time
   - Verified header,cookies
+- API chaining
