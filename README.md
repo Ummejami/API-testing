@@ -82,8 +82,9 @@ https://share.google/clnJvpt786PwDN5Os
 ---
 
 ## 🌐 API Used
-- https://simple-books-api.glitch.me/
-
+```bash
+https://simple-books-api.glitch.me/
+```
 ---
 
 ## 🎯 Objectives
@@ -101,14 +102,15 @@ The API requires authentication for order-related endpoints.
 ### Generate Token:
 - Send POST request to `/api-clients/`
 - Store token in environment variable  
-
-## 3. Go_rest API
+---
+# 3. Go_rest API
+## 📌 Overview
 This project demonstrates end-to-end API testing of a User Management system using the GoRest public API. It covers authentication, CRUD operations, API chaining, validation, and automation.
 ##  🌐 API Used
 ```bash
 https://gorest.co.in/
 ```
-## Objectives
+## 🎯Objectives
 -Perform CRUD operations on user resources
 -Implement Bearer Token authentication
 -Validate API responses (status codes, body, schema)
