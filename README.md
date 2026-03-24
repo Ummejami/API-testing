@@ -111,10 +111,10 @@ This project demonstrates end-to-end API testing of a User Management system usi
 https://gorest.co.in/
 ```
 ## 🎯Objectives
--Perform CRUD operations on user resources
--Implement Bearer Token authentication
--Validate API responses (status codes, body, schema)
--Perform API chaining using environment variables
+- Perform CRUD operations on user resources
+- Implement Bearer Token authentication
+- Validate API responses (status codes, body, schema)
+- Perform API chaining using environment variables
 ## Tools Used
 - Node.js
 - Postman
