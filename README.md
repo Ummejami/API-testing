@@ -1,10 +1,13 @@
-# Dummy Student API (JSON Server)
+# API testing with Public API, Authinticated API and Local API 
+This project demonstarte how  API testing perform through various domain and fields.
+---
+## 1. Dummy Student API (JSON Server)
 
 This project demonstrates how to create a simple dummy REST API using **Node.js** and **JSON Server**. It can be used for API testing, frontend development, and learning REST API concepts.
 
 ---
 
-## Project Overview
+## Overview
 
 A local dummy API was created using **JSON Server** and a `student.json` file. The API was tested in **Postman** by performing CRUD operations and validating the response status codes.
 
@@ -59,6 +62,21 @@ The API responses were validated in Postman using test scripts to verify that th
   ```bash
   https://www.liquid-technologies.com/online-json-to-schema-converter
   ```
+
+ ---
+
+## 2. Simple Books API 
+This project demonstrates end-to-end API testing of a Book Store system including authentication, book retrieval, order creation, and order management ,api chaining using postman. This is a documented API. The documentation like express the workflow of this entire system . 
+Documentation is available here.
+``` bash
+https://share.google/clnJvpt786PwDN5Os
+```
+
+## Tools Used
+- Node.js
+- Postman
+- JSON server
+- Github
 ## Summary
 What I have done here?
 - Dummy API creation
@@ -71,9 +89,3 @@ What I have done here?
   - Performed JSON schema validation
   - Checked response time
   - Verified header,cookies
-
-## Tools Used
-- Node.js
-- Postman
-- JSON server
-- Github
